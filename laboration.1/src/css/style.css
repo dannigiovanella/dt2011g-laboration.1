@@ -1,14 +1,51 @@
 
 
-.piturecontainer img{
-    width:200px ;
-}
-
-body{
+body {
     background-color: rgb(233, 232, 232);
+    max-width: 1900px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
-.piturecontainer img{
-    width:200px ;
+header {
+    width: 100%;
+}
+
+.headpic {
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.headpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.pictures {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.piturecontainer {
+    background-color: rgb(226, 208, 207);
+    padding: 1rem;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.piturecontainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
