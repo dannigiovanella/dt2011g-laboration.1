@@ -11,6 +11,23 @@ body {
     font-family: 'Roboto', Segoe UI, Geneva, Verdana, sans-serif;
 }
 
+h1{
+    color: rgb(0, 17, 58);
+    font-family: 'Montserrat', Segoe UI, Geneva, Verdana, sans-serif;
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section p{
+    max-width: 65ch;
+}
+
 nav {
     padding-bottom: 1rem;
     padding-top: 0.5rem;
@@ -40,6 +57,7 @@ nav a:hover {
 main {
     background-color: rgb(233, 232, 232);
     width: 80%;
+    margin-top: 0.7rem;
 }
 
 header {
@@ -85,8 +103,23 @@ header {
 }
 
 @media (max-width: 600px) {
-    
+
   .pictures {
     grid-template-columns: 1fr;
+  }
+
+  main{
+    width: 95%;
+  }
+
+  h1{
+    font-size: 1.2rem;
+  }
+
+  nav ul{
+    gap: 1.2rem;
+    font-size: 1rem;
+display: flex;
+justify-content: left;
   }
 }
