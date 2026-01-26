@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--CSS-FIL-->
   <link rel="stylesheet" href="src/css/style.css">
 
   <title>Bilder</title>
@@ -13,9 +14,10 @@
 <body>
 
   <header>
-
+    <!--Hamburgerikon för many till mindre skärm-->
     <button class="hamburger">&#9776;</button>
 
+    <!--navigeringsmeny-->
     <nav class="navbar">
       <ul>
         <li><a href="./index.html">Startsida</a></li>
@@ -23,44 +25,48 @@
         <li><a href="./process.html">Process</a></li>
       </ul>
     </nav>
+
     <h1>Laboration 1</h1>
+    <!--Headerbild-->
     <div class="headpic">
       <img src="public/images/headerbild.webp" alt="">
     </div>
   </header>
 
   <main>
+    <!--Sektion som visar 4 olika bilder-->
     <section>
       <h2>Bildoptimering</h2>
+
       <div class="process">
         <p>På denna sida presenteras fem stycken bilder i WebP-format som har optimerats genom ett pluin som heter Vite
           image optimizer. Presenterade bilder har gått igenom en process där det optimerats genom vektyget med
           kompressionsnivån 65.</p>
-           Bilder nedan presenteras med bildstorlek i orginalform och efter resultat med optimering.
+        Bilder nedan presenteras med bildstorlek i orginalform och efter resultat med optimering.
         <p>Headerbilden över fick detta resultat efter optimering:</p>
         <p><strong>Före:</strong> 698 kb</p>
         <p><strong>Efter: </strong>173 kb</p>
       </div>
-
+      <!--Individuella bild-kort-->
       <div class="pictures">
         <div class="piturecontainer">
           <img src="public/images/bild1.webp" alt="">
           <p><strong>Före:</strong> 557 kb</p>
           <p><strong>Efter:</strong> 105 kb</p>
         </div>
-
+        <!--Individuella bild-kort-->
         <div class="piturecontainer">
           <img src="public/images/bild2.webp" alt="">
           <p><strong>Före:</strong> 526 kb</p>
           <p><strong>Efter:</strong> 78 kb</p>
         </div>
-
+        <!--Individuella bild-kort-->
         <div class="piturecontainer">
           <img src="public/images/bild3.webp" alt="">
           <p><strong>Före:</strong> 608 kb</p>
           <p><strong>Efter:</strong> 123 kb</p>
         </div>
-
+        <!--Individuella bild-kort-->
         <div class="piturecontainer">
           <img src="public/images/bild4.webp" alt="">
           <p><strong>Före:</strong> 689 kb</p>
@@ -74,6 +80,7 @@
     <p><strong>Sida skapad av:</strong></p>
     <p>Daniela Giovanella<br>dagi2500@student.miun.se</p>
   </footer>
+  <!--JavaScript-fil-->
   <script type="module" src="./src/js/main.js"></script>
 </body>
 
