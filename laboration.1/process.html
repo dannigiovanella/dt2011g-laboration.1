@@ -2,10 +2,10 @@
 <html lang="sv">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/style.css">
-  <script type="module" src="src/js/main.js" defer></script>
+
   <title>Arbetsprocess</title>
 </head>
 
@@ -15,11 +15,11 @@
     <button class="hamburger">&#9776;</button>
 
     <nav class="navbar">
-    <ul>
-      <li><a href="./index.html">Startsida</a></li>
-      <li><a href="./pictures.html">Bilder</a></li>
-      <li><a href="./process.html" class="active">Process</a></li>
-    </ul>
+      <ul>
+        <li><a href="./index.html">Startsida</a></li>
+        <li><a href="./pictures.html">Bilder</a></li>
+        <li><a href="./process.html" class="active">Process</a></li>
+      </ul>
     </nav>
     <h1>Laboration 1</h1>
   </header>
@@ -27,20 +27,69 @@
 
   <main>
     <section>
-      <h2>Arbetsprocess</h2>
+      <h2>Arbetsprocessen</h2>
+      <div class="process">
+        <h3>Node.js och Vite</h3>
+        <p><strong>I det här arbetet har Node.js använts som en grund att kunna installera och använda olika
+            utvecklingsverktyg
+            för automatisering. Med hjälp av <em>npm (Node Package Manager)</em> har Vite installerats och använts för
+            att optimera källkodsfiler genom att
+            minifiera kod och optimera bilder innan webbplatsen publiceras.</strong></p>
 
-      <h3>rubrik 1</h3>
-      <p></p>
 
-      <h3>Resultat av optimering</h3>
-      <p></p>
+        <h3>1. Hantering av källkodsfiler</h3>
+        <p>I arbetet med webbplatsen har strukturerats upp med källkodsfiler i HTML, CSS, JavaScript samt bilder. Dessa
+          ligger separat från versionerna av dessa filer som Vite automatiskt skapar och lägger i en distrubitionsmapp
+          vid
+          optimering. </p>
+        <p>Under utvecklingen har Git används som versionshanterare kopplat mot Github, och här har det jobbats i främst
+          två olika brancher, <em>development</em> som används under utvecklinen och <em>main</em> för att publicera
+          färdiga och optimerade
+          filer ifrån, dessa är de filer som Vite automatiskt skapar vid build-processen. </p>
+        <p>Under arbetet har regelbundna commits gjort för att dokumentera ändringar i arbetet. Vid installation av Vite
+          skapades en gitignore-fil automatiskt där node-modules hamnar för att exkluderas i versionshanteringen för att
+          undvika att skicka med onödiga filer.</p>
+
+
+        <h3>2. Automatisering med Vite</h3>
+        <p>För att underlätta arbetet med att optimera filer använde jag Vite som installerades med <em>npm install vite
+            --save-dev</em> , och inställningar för hur arbetet skulle byggas med <em>vite.config.js</em></p>
+        <p>Då vite har som standard att behandla projekt som en-sidorsprojekt så behövdes det göras en anpassning för
+          Vite
+          att hitta flera sidor, då arbetet innehåller tre sidor. Detta lösets med <em>resolve</em> som talar om vilka
+          sidor och sökvägen till dessa som
+          Vite ska behandla.</p>
+        <p>Plug-inet Vite image optimizer har använts för bilderna i arbetet med WebP-format, och har testats med olika
+          kompressionsnivåer för att få bästa optimering kontra kvalité.</p>
+        <p>För att bygga det färdiga arbetet med inställningarna i Vite har <em>npm run bild</em> körts som skapar
+          skapar
+          filerna i dist som är klara för publicering. Processen gör att JavaScript och CSS-filer slås ihop och
+          minifierar
+          koden, samt att bidlerna optimeras efter den nivå som är inställd i plugin för detta.</p>
+
+        <h3>3. Publicering och test</h3>
+        <p>Innan publicering testades webbplatsen genom att köra kommando <em>npm run preview</em> för att se hur
+          webbplatsen såg ut
+          efter processen med optimeringen.</p>
+        <p>I detta läge justerades även optimeringsnivån ytterligare på bilderna då dessa fortfarande höll så god
+          kvalité
+          att de kunde komprimeras ytterligare.</p>
+        <p>Efter justeringar när webbplatsen kändes klar gjordes en <em>merge</em> med innehållet från
+          development-branchen till huvudbranchen
+          main. I main kördes build-processen på nytt och skapade den dist-mappen som var redo att publiceras. I detta
+          läge pushades hela innehållet från main till Github för att kunna publiceras.</p>
+        <p>Färdiga filer i dist-mappen publicerades via Render som tillåter att ändingar som görs i main-branchen
+          automatsikt uppdateras och syns på den publicerade webbplatsen.</p>
+      </div>
     </section>
+
   </main>
-  
+
   <footer>
     <p><strong>Sida skapad av:</strong></p>
     <p>Daniela Giovanella<br>dagi2500@student.miun.se</p>
   </footer>
+  <script type="module" src="./src/js/main.js"></script>
 </body>
 
 </html>

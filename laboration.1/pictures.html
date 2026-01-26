@@ -1,74 +1,80 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="src/css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="module" src="src/js/main.js" defer></script>
+  <link rel="stylesheet" href="src/css/style.css">
 
-    <title>Bilder</title>
-  </head>
-  <body>
-    
+  <title>Bilder</title>
+</head>
+
+<body>
+
   <header>
 
     <button class="hamburger">&#9776;</button>
 
     <nav class="navbar">
-    <ul>
-      <li><a href="./index.html">Startsida</a></li>
-      <li><a href="./pictures.html" class="active">Bilder</a></li>
-      <li><a href="./process.html">Process</a></li>
-    </ul>
+      <ul>
+        <li><a href="./index.html">Startsida</a></li>
+        <li><a href="./pictures.html" class="active">Bilder</a></li>
+        <li><a href="./process.html">Process</a></li>
+      </ul>
     </nav>
     <h1>Laboration 1</h1>
-<div class="headpic">
-  <img src="public/images/headerbild.webp" alt="">
-</div>
-</header>
+    <div class="headpic">
+      <img src="public/images/headerbild.webp" alt="">
+    </div>
+  </header>
 
-<main>
-  <section>
-    <h2>Bildoptimering</h2>
-
-    <p>Headerbild</p>
+  <main>
+    <section>
+      <h2>Bildoptimering</h2>
+      <div class="process">
+        <p>På denna sida presenteras fem stycken bilder i WebP-format som har optimerats genom ett pluin som heter Vite
+          image optimizer. Presenterade bilder har gått igenom en process där det optimerats genom vektyget med
+          kompressionsnivån 65.</p>
+           Bilder nedan presenteras med bildstorlek i orginalform och efter resultat med optimering.
+        <p>Headerbilden över fick detta resultat efter optimering:</p>
         <p><strong>Före:</strong> 698 kb</p>
-  <p><strong>Efter: </strong>173 kb</p>
+        <p><strong>Efter: </strong>173 kb</p>
+      </div>
 
-<div class="pictures">
-<div class="piturecontainer">
-  <img src="public/images/bild1.webp" alt="">
-  <p><strong>Före:</strong> 557 kb</p>
-  <p><strong>Efter:</strong> 105 kb</p>
-</div>
+      <div class="pictures">
+        <div class="piturecontainer">
+          <img src="public/images/bild1.webp" alt="">
+          <p><strong>Före:</strong> 557 kb</p>
+          <p><strong>Efter:</strong> 105 kb</p>
+        </div>
 
-<div class="piturecontainer">
-<img src="public/images/bild2.webp" alt="">
-  <p><strong>Före:</strong> 526 kb</p>
-  <p><strong>Efter:</strong> 78 kb</p>
-</div>
+        <div class="piturecontainer">
+          <img src="public/images/bild2.webp" alt="">
+          <p><strong>Före:</strong> 526 kb</p>
+          <p><strong>Efter:</strong> 78 kb</p>
+        </div>
 
-<div class="piturecontainer">
-  <img src="public/images/bild3.webp" alt="">
-    <p><strong>Före:</strong> 608 kb</p>
-  <p><strong>Efter:</strong> 123 kb</p>
-</div>
+        <div class="piturecontainer">
+          <img src="public/images/bild3.webp" alt="">
+          <p><strong>Före:</strong> 608 kb</p>
+          <p><strong>Efter:</strong> 123 kb</p>
+        </div>
 
-<div class="piturecontainer">
-  <img src="public/images/bild4.webp" alt="">
-    <p><strong>Före:</strong> 689 kb</p>
-  <p><strong>Efter:</strong> 173 kb</p>
-</div>
-</div>
-  </section>
-</main>
+        <div class="piturecontainer">
+          <img src="public/images/bild4.webp" alt="">
+          <p><strong>Före:</strong> 689 kb</p>
+          <p><strong>Efter:</strong> 173 kb</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p><strong>Sida skapad av:</strong></p>
     <p>Daniela Giovanella<br>dagi2500@student.miun.se</p>
   </footer>
+  <script type="module" src="./src/js/main.js"></script>
 </body>
 
 </html>
