@@ -65,7 +65,7 @@
           kompressionsnivåer för att få bästa optimering kontra kvalité.</p>
         <p>För att bygga det färdiga arbetet med inställningarna i Vite har <em>npm run bild</em> körts som skapar
           skapar
-          filerna i dist som är klara för publicering. Processen gör att JavaScript och CSS-filer slås ihop och
+          filerna i en dist-mapp som är klara för publicering. Processen gör att JavaScript och CSS-filer slås ihop och
           minifierar
           koden, samt att bidlerna optimeras efter den nivå som är inställd i plugin för detta.</p>
 
@@ -76,9 +76,9 @@
         <p>I detta läge justerades även optimeringsnivån ytterligare på bilderna då dessa fortfarande höll så god
           kvalité
           att de kunde komprimeras ytterligare.</p>
-        <p>Efter justeringar när webbplatsen kändes klar gjordes en <em>merge</em> med innehållet från
+        <p>Efter justeringar när webbplatsen kändes klar gjordes en  build-process på nytt och skapade den dist-mappen som var redo att publiceras. En <em>merge</em> gjored därefter med innehållet från
           development-branchen till huvudbranchen
-          main. I main kördes build-processen på nytt och skapade den dist-mappen som var redo att publiceras. I detta
+          main. I detta
           läge pushades hela innehållet från main till Github för att kunna publiceras.</p>
         <p>Färdiga filer i dist-mappen publicerades via Render som tillåter att ändingar som görs i main-branchen
           automatsikt uppdateras och syns på den publicerade webbplatsen.</p>
