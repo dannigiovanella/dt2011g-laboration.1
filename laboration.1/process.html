@@ -12,9 +12,9 @@
 
 <body>
   <header>
-<!--Hamburgerikon för many till mindre skärm-->
+    <!--Hamburgerikon för many till mindre skärm-->
     <button class="hamburger">&#9776;</button>
-<!--navigeringsmeny-->
+    <!--navigeringsmeny-->
     <nav class="navbar">
       <ul>
         <li><a href="./index.html">Startsida</a></li>
@@ -76,10 +76,11 @@
         <p>I detta läge justerades även optimeringsnivån ytterligare på bilderna då dessa fortfarande höll så god
           kvalité
           att de kunde komprimeras ytterligare.</p>
-        <p>Efter justeringar när webbplatsen kändes klar gjordes en  build-process på nytt och skapade den dist-mappen som var redo att publiceras. En <em>merge</em> gjored därefter med innehållet från
+        <p>Efter justeringar när webbplatsen kändes klar gjordes en <em>merge</em> med innehållet från
           development-branchen till huvudbranchen
-          main. I detta
-          läge pushades hela innehållet från main till Github för att kunna publiceras.</p>
+          main. Efter ett antal problem lyckades mergen och en ny <em>run buld</em> kördes för att få fram en dist-mapp
+          med filer färdiga för publicering. Efter en koll att alla filer fungerade detta pushades hela innehållet från
+          main till Github för att kunna publiceras.</p>
         <p>Färdiga filer i dist-mappen publicerades via Render som tillåter att ändingar som görs i main-branchen
           automatsikt uppdateras och syns på den publicerade webbplatsen.</p>
       </div>
@@ -91,7 +92,7 @@
     <p><strong>Sida skapad av:</strong></p>
     <p>Daniela Giovanella<br>dagi2500@student.miun.se</p>
   </footer>
-   <!--JavaScript-fil-->
+  <!--JavaScript-fil-->
   <script type="module" src="./src/js/main.js"></script>
 </body>
 
